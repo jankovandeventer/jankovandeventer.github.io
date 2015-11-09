@@ -1,8 +1,53 @@
-<!DOCtype html>
-<head>
-<title>hoi fritz</title>
-<head>
+<?php
+if($_POST["message"]) {
+    mail("thejankovic@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
+<!DOCTYPE html>
+<html>
 <body>
-<p> hoi</p>
+	
+	<!-- formulier voor Whalid --> 
+	<h1>Invulformulier reparatie</h1>
+	<form method="post" action="invulformulier.php">
+		<br>
+		GSMDOC Aalsmeer<br>
+		0297-820960<br>
+		info@gsmdoc.nl<br>
+		<hr>
+		<h3>Persoonsgegevens</h3>
+		Naam:<br>
+		<input type="text" name="naam"><br>
+		Achternaam:<br>
+		<input type="text" name="achternaam"><br>
+		Adres:<br>	
+		<input type="text" name="adreslijn1"><br>
+		<input type="text" name="adreslijn2"><br>
+		<input type="text" name="adreslijn3"><br>
+		Telefoonnummer:<br>
+		<input type="text" name="telefoonnummer"><br>
+		<br>
+		<hr>
+		<h3>Telefoon</h3>
+		Merk:<br>
+		<input type="text" name="merk"><br>
+		Model:<br>
+		<input type="text" name="model"><br>
+		imeinummer:<br>
+		<input type="text" name="imeinummer"><br>
+		<br>
+		<hr>
+		<h3>Reparatie verzoek</h3>
+		<input type="radio" name="display/beeldscherm"> display/beeldscherm<br>
+		<input type="radio" name="laadconnector"> laadconnector<br>
+		<input type="radio" name="wifimodule"> WiFi-module <br>
+		<input type="radio" name="antenna"> antenna/verbinding <br>
+		<br>
+		<hr>
+		<input type="submit">
+	</form>
+		
+	
 </body>
 </html>
