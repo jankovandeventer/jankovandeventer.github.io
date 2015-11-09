@@ -18,24 +18,34 @@ if($_POST["message"]) {
 		<hr>
 		<h3>Persoonsgegevens</h3>
 		Naam:<br>
-		<input type="text" name="naam"><br>
+		<input type="text" name=""><br>
 		Achternaam:<br>
-		<input type="text" name="achternaam"><br>
+		<input type="text" name=""><br>
 		Adres:<br>	
-		<input type="text" name="adreslijn1"><br>
-		<input type="text" name="adreslijn2"><br>
-		<input type="text" name="adreslijn3"><br>
+		<input type="text" name=""><br>
+		<input type="text" name=""><br>
+		<input type="text" name=""><br>
 		Telefoonnummer:<br>
-		<input type="text" name="telefoonnummer"><br>
+		<input type="text" name=""><br>
 		<br>
 		<hr>
 		<h3>Telefoon</h3>
 		Merk:<br>
-		<input type="text" name="merk"><br>
+		<select name="Merk"><br>
+		
+			<option value="Apple">Apple</option>
+			<option value="Samsung">Samsung</option>
+			<option value="Huawei">Huawei</option>
+			<option value="LG">LG</option>
+			<option value="Sony">Sony</option>
+			<option value="Nokia/Microsoft">Nokia/Microsoft</option>
+			<option value="Anders...">Anders...</option>
+		</select>
+		<br>
 		Model:<br>
-		<input type="text" name="model"><br>
+		<input type="text" name="Model"><br>
 		imeinummer:<br>
-		<input type="text" name="imeinummer"><br>
+		<input type="text" name=""><br>
 		<br>
 		<hr>
 		<h3>Reparatie verzoek</h3>
@@ -45,7 +55,10 @@ if($_POST["message"]) {
 		<input type="radio" name="antenna"> antenna/verbinding <br>
 		<br>
 		<hr>
-		<input type="submit">
+		<textarea name="message" rows="5" cols="30">
+			Opmerkingen...
+		</textarea>
+		<input type="submit" text="Aanmelden">
 	</form>
 		
 	
